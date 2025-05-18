@@ -2,156 +2,147 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Рослина Карпат | Магазин фітопрепаратів</title>
+  <title>Рослина Карпат</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
     }
     header {
-      background-color: #2e7d32;
+      background-color: #4CAF50;
       color: white;
-      padding: 15px 20px;
+      padding: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-radius: 0 0 40px 40px;
     }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo h1 {
-      font-size: 1.5rem;
-      margin-right: 10px;
-    }
-    .logo img {
-      height: 45px;
+    header img {
+      height: 50px;
     }
     nav {
-      position: relative;
+      background-color: #333;
     }
     nav ul {
-      list-style: none;
+      list-style-type: none;
       margin: 0;
       padding: 0;
       display: flex;
     }
     nav li {
       position: relative;
-      margin: 0 15px;
     }
-    nav a {
+    nav > ul > li {
+      float: left;
+    }
+    nav li a {
+      display: block;
       color: white;
+      padding: 14px 20px;
       text-decoration: none;
-      font-weight: bold;
     }
-    nav ul ul {
+    nav li:hover {
+      background-color: #111;
+    }
+    nav li ul {
       display: none;
       position: absolute;
-      top: 30px;
-      left: 0;
-      background-color: #388e3c;
-      padding: 10px;
-      border-radius: 5px;
+      background-color: #333;
+      min-width: 160px;
+      z-index: 1;
     }
-    nav li:hover > ul {
+    nav li:hover ul {
       display: block;
     }
-    .hero {
-      background-color: #cccccc;
-      padding: 30px 20px;
-      text-align: center;
+    nav li ul li {
+      float: none;
     }
-    .hero h1 {
-      color: #2e7d32;
-      margin-bottom: 10px;
+    .top-links {
+      display: flex;
+      gap: 15px;
     }
-    .catalog {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    .top-links a {
+      color: white;
+      text-decoration: none;
+    }
+    .search-bar {
+      background-color: #f1f1f1;
+      padding: 10px 20px;
+    }
+    .search-bar input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
       padding: 20px;
+      gap: 20px;
     }
     .product {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: calc(25% - 20px);
+      box-sizing: border-box;
       text-align: center;
     }
     .product img {
       max-width: 100%;
       height: auto;
     }
-    .product h3 {
-      color: #2e7d32;
+    @media (max-width: 768px) {
+      .product {
+        width: calc(50% - 20px);
+      }
     }
-    .product a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #2e7d32;
-      color: white;
-      text-decoration: none;
-      border-radius: 3px;
+    @media (max-width: 480px) {
+      .product {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>Рослина Карпат</h1>
-      <img src="https://i.postimg.cc/bNWmTPDd/2025-05-18-104933.png" alt="Логотип Рослина Карпат">
-    </div>
-    <nav>
+
+<header>
+  <img src="https://i.postimg.cc/ZRvhjd62/2025-05-18-104933-removebg-preview.png" alt="Логотип Рослина Карпат">
+  <div class="top-links">
+    <a href="#">Регістрація</a>
+    <a href="#">Вхід</a>
+    <a href="#">Кошик</a>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Каталог</a>
       <ul>
-        <li>
-          <a href="#">Каталог</a>
-          <ul>
-            <li><a href="#bads">БАДи</a></li>
-            <li><a href="#complexes">Готові комплекси</a></li>
-            <li><a href="#chemistry">Побутова хімія</a></li>
-            <li><a href="#cosmetics">Натуральна косметика</a></li>
-          </ul>
-        </li>
+        <li><a href="#">БАДи</a></li>
+        <li><a href="#">Готові комплекси</a></li>
+        <li><a href="#">Побутова хімія</a></li>
+        <li><a href="#">Натуральна косметика</a></li>
       </ul>
-    </nav>
-  </header>
+    </li>
+    <li><a href="#">Про нас</a></li>
+    <li><a href="#">Контакти</a></li>
+  </ul>
+</nav>
 
-  <section class="hero">
-    <h1>Натуральні фітопрепарати з Карпат</h1>
-    <p>Збережи здоров'я з силою природи</p>
-  </section>
+<div class="search-bar">
+  <input type="text" placeholder="Пошук...">
+</div>
 
-  <section class="catalog">
-    <div class="product">
-      <img src="https://i.postimg.cc/hjXbBKRj/1.png" alt="Фітокомплекс 1">
-      <h3>Карпатський Імуностимулятор</h3>
-      <p>Підвищення імунітету та енергії на основі натуральних трав.</p>
-      <a href="#">Детальніше</a>
-    </div>
-    <div class="product">
-      <img src="https://i.postimg.cc/R0VGCZ2s/2025-05-18-105746.png" alt="Фітокомплекс 2">
-      <h3>Заспокійливий збір</h3>
-      <p>Сприяє нормалізації сну та зменшенню тривожності.</p>
-      <a href="#">Детальніше</a>
-    </div>
-    <div class="product">
-      <img src="https://i.postimg.cc/MZqGmnct/3.png" alt="Фітокомплекс 3">
-      <h3>Гепатовіт</h3>
-      <p>Комплекс для підтримки роботи печінки.</p>
-      <a href="#">Детальніше</a>
-    </div>
-    <div class="product">
-      <img src="https://i.postimg.cc/g2ykL7qB/4.png" alt="Фітокомплекс 4">
-      <h3>Фітосвічки Гельмінтин</h3>
-      <p>Допомагають при боротьбі з паразитами та грибками.</p>
-      <a href="#">Детальніше</a>
-    </div>
-  </section>
+<div class="products">
+  <!-- Приклад продукту -->
+  <div class="product">
+    <a href="product-detail.html">
+      <img src="images/product1.png" alt="Назва продукту">
+      <h3>Назва продукту</h3>
+    </a>
+    <p>Короткий опис продукту.</p>
+  </div>
+  <!-- Додайте більше продуктів за потреби -->
+</div>
 
 </body>
 </html>
