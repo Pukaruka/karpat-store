@@ -6,19 +6,21 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
     }
     .form-container {
-      background: white;
+      background-color: white;
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
     }
     h2 {
       text-align: center;
@@ -29,20 +31,20 @@
       padding: 10px;
       margin: 10px 0;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 5px;
     }
     button {
       width: 100%;
       padding: 10px;
       background-color: #2e7d32;
-      border: none;
       color: white;
+      border: none;
+      border-radius: 5px;
       font-size: 16px;
-      border-radius: 4px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #1b5e20;
+      background-color: #256428;
     }
   </style>
 </head>
@@ -53,6 +55,7 @@
       <input type="text" placeholder="Ім'я" required>
       <input type="email" placeholder="Email" required>
       <input type="password" placeholder="Пароль" required>
+      <input type="password" placeholder="Підтвердити пароль" required>
       <button type="submit">Зареєструватися</button>
     </form>
   </div>
