@@ -69,25 +69,25 @@
       color: #2e7d32;
       margin-bottom: 10px;
     }
-    .categories, .catalog {
+    .catalog {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-    .category, .product {
+    .product {
       background: white;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
-    .category h3, .product h3 {
-      color: #2e7d32;
-    }
     .product img {
       max-width: 100%;
       height: auto;
+    }
+    .product h3 {
+      color: #2e7d32;
     }
     .product a {
       display: inline-block;
@@ -125,5 +125,33 @@
     <h1>Натуральні фітопрепарати з Карпат</h1>
     <p>Збережи здоров'я з силою природи</p>
   </section>
+
+  <section class="catalog">
+    <div class="product">
+      <img src="https://i.postimg.cc/hjXbBKRj/1.png" alt="Фітокомплекс 1">
+      <h3>Карпатський Імуностимулятор</h3>
+      <p>Підвищення імунітету та енергії на основі натуральних трав.</p>
+      <a href="#">Детальніше</a>
+    </div>
+    <div class="product">
+      <img src="https://i.postimg.cc/Y2QKsP6M/2.png" alt="Фітокомплекс 2">
+      <h3>Заспокійливий збір</h3>
+      <p>Сприяє нормалізації сну та зменшенню тривожності.</p>
+      <a href="#">Детальніше</a>
+    </div>
+    <div class="product">
+      <img src="https://i.postimg.cc/MZqGmnct/3.png" alt="Фітокомплекс 3">
+      <h3>Гепатовіт</h3>
+      <p>Комплекс для підтримки роботи печінки.</p>
+      <a href="#">Детальніше</a>
+    </div>
+    <div class="product">
+      <img src="https://i.postimg.cc/g2ykL7qB/4.png" alt="Фітокомплекс 4">
+      <h3>Фітосвічки Гельмінтин</h3>
+      <p>Допомагають при боротьбі з паразитами та грибками.</p>
+      <a href="#">Детальніше</a>
+    </div>
+  </section>
+
 </body>
 </html>
