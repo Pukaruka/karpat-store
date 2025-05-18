@@ -17,6 +17,18 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      border-radius: 0 0 40px 40px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo h1 {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+    .logo img {
+      height: 45px;
     }
     nav {
       position: relative;
@@ -48,28 +60,16 @@
     nav li:hover > ul {
       display: block;
     }
-    nav ul ul li {
-      margin: 0;
-    }
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
-      height: 40px;
-      margin-left: 10px;
-    }
     .hero {
-      background-color: #e0e0e0;
-      padding: 50px 20px;
+      background-color: #cccccc;
+      padding: 30px 20px;
       text-align: center;
     }
     .hero h1 {
       color: #2e7d32;
+      margin-bottom: 10px;
     }
-    .categories {
+    .categories, .catalog {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
@@ -103,8 +103,8 @@
 <body>
   <header>
     <div class="logo">
-      Рослина Карпат
-      <img src="https://roslynakarpat.com.ua/image/catalog/logo.png" alt="Логотип">
+      <h1>Рослина Карпат</h1>
+      <img src="https://roslynakarpat.com.ua/image/catalog/logo.png" alt="Логотип Рослина Карпат">
     </div>
     <nav>
       <ul>
@@ -125,7 +125,5 @@
     <h1>Натуральні фітопрепарати з Карпат</h1>
     <p>Збережи здоров'я з силою природи</p>
   </section>
-
-  <!-- Тут залишаємо секції товарів, які вже працюють -->
 </body>
 </html>
