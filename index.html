@@ -16,6 +16,11 @@
       align-items: center;
       justify-content: space-between;
     }
+    .logo-block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
     header img {
       height: 50px;
     }
@@ -105,11 +110,14 @@
 <body>
 
 <header>
-  <img src="https://i.postimg.cc/ZRvhjd62/2025-05-18-104933-removebg-preview.png" alt="Логотип Рослина Карпат">
+  <div class="logo-block">
+    <img src="https://i.postimg.cc/ZRvhjd62/2025-05-18-104933-removebg-preview.png" alt="Логотип Рослина Карпат">
+    <h1>Рослина Карпат</h1>
+  </div>
   <div class="top-links">
-    <a href="#">Регістрація</a>
-    <a href="#">Вхід</a>
-    <a href="#">Кошик</a>
+    <a href="register.html">Регістрація</a>
+    <a href="login.html">Вхід</a>
+    <a href="cart.html">Кошик</a>
   </div>
 </header>
 
@@ -141,7 +149,6 @@
     </a>
     <p>Короткий опис продукту.</p>
   </div>
-  <!-- Додайте більше продуктів за потреби -->
 </div>
 
 </body>
